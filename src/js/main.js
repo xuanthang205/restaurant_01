@@ -5,7 +5,7 @@ const $$ = document.querySelectorAll.bind(document);
 const header = $("#header");
 
 // load nội dung dùng chung
-fetch("../header.html")
+fetch("src/layout/header.html")
   .then((res) => res.text())
   .then((html) => {
     header.innerHTML = html;
