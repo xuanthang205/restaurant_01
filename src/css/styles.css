@@ -379,7 +379,7 @@ button {
 .hero_wrap {
   display: flex;
   align-items: center;
-  padding-top: 26px;
+  padding: 26px 0 94px;
   font-family: "Plus Jakarta Sans";
   color: var(--primary-text-color);
 }
@@ -502,3 +502,49 @@ button {
   }
 }
 /* // Hero */
+
+/* Stats */
+.stats {
+  padding: 60px 0;
+  background-image: url("../img/stats/img_stats_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stat_list {
+  display: flex;
+  justify-content: center;
+  padding: 0 18px;
+}
+
+.stat_item {
+  display: flex;
+}
+
+.stat_item:nth-child(2) {
+  margin-left: 8.82%;
+}
+
+.stat_item:nth-child(3) {
+  margin-left: 8.125%;
+}
+
+.stat_number,
+.stat_desc {
+  color: var(--text-white-color);
+  font-family: "Libre Bodoni";
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 74px;
+  text-transform: capitalize;
+}
+
+.stat_desc {
+  max-width: 148px;
+  margin-left: 19px;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+/* // Stats */
