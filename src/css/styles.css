@@ -455,7 +455,7 @@ button {
   .hero_wrap {
     flex-direction: column;
     row-gap: 50px;
-    padding-top: 81px;
+    padding: 81px 0 70px;
   }
 
   .hero_box,
@@ -506,10 +506,12 @@ button {
 /* Stats */
 .stats {
   padding: 60px 0;
+  background: linear-gradient(269deg, rgba(0, 0, 0, 0.2) 21.08%, rgba(0, 0, 0, 0) 38.98%), rgba(17, 17, 20, 0.6);
   background-image: url("../img/stats/img_stats_bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  backdrop-filter: blur(2.5px);
 }
 
 .stat_list {
@@ -547,4 +549,29 @@ button {
   line-height: 34px;
 }
 
+@media screen and (max-width: 992px) {
+  .stat_list {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .stat_item:nth-child(2),
+  .stat_item:nth-child(3) {
+    margin-left: 0;
+  }
+
+  .stat_item {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stats {
+    padding: 50px 0;
+  }
+
+  .stat_list {
+    row-gap: 30px;
+  }
+}
 /* // Stats */
